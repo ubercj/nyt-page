@@ -103,40 +103,133 @@ input, select {
 
 /*
 ====================================================
+Top Navigation
+====================================================
 */
 
 * {
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
 }
 
-.page-container {
-    background-color: silver;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+body {
+    font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
 }
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 
 nav {
-    background-color: crimson;
     width: 100%;
     display: flex;
 }
 
 .top {
-    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 42px;
+    padding: 5px 12px;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.top div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.top div:last-child {
+    justify-content: flex-end;
+}
+
+.wordmark {
+    justify-content: center;
+}
+
+.top a, .top img {
+    height: 100%;
+}
+
+.top a {
+    padding: 8px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.icon:hover {
+    background-color: #f7f7f7;
+}
+
+.wordmark a {
+    padding: 0;
+}
+
+.top button {
+    color: white;
+    background-color: rgb(86, 123, 149);
+    border: 1px solid rgb(50, 104, 145);    
+    border-radius: 3px;
+    height: 100%;
+    font-weight: bold;
+    margin: 4px;
+}
+
+.top button:hover {
+    background-color: rgb(50, 104, 145);
+}
+
+/*
+====================================================
+Page Heading
+====================================================
+*/
+
+.page-container {
+    /* background-color: silver; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
     background-color: hotpink;
+    margin-top: 64px;
 }
 
 .photo {
     background-color: lawngreen;
 }
 
+/*
+====================================================
+Sidebar
+====================================================
+*/
+
 .sidebar {
     background-color: blue;
 }
+
+/*
+====================================================
+Article
+====================================================
+*/
 
 .article {
     background-color: lightsalmon;
@@ -161,6 +254,12 @@ header {
 .suggested {
     background-color: indigo;
 }
+
+/*
+====================================================
+Footer
+====================================================
+*/
 
 footer {
     background-color: maroon;
