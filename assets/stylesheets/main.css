@@ -329,6 +329,11 @@ Article
     align-items: center;
 }
 
+.article > p {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+}
+
 .grid {
     background-color: magenta;
 }
@@ -411,6 +416,34 @@ Sign-Up Button
     font-size: 0.9375rem;
     font-weight: 700;
     width: 20%;
+}
+
+/*
+====================================================
+Subscribe Now
+====================================================
+*/
+
+.spacer {
+    border-bottom: 1px solid rgb(204, 204, 204);
+    height: 0;
+    width: 12%;
+    margin: 25px 0;
+}
+
+.subscribe {
+    text-align: center;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-weight: 600;
+}
+
+.subscribe p {
+    margin: 5px;
+}
+
+.subscribe a {
+    color:rgb(50, 104, 145);
+    text-decoration: none;
 }
 
 /*
