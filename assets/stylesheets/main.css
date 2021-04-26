@@ -202,7 +202,7 @@ nav {
     padding: 0;
 }
 
-.top button {
+.top button, .article-bottom button {
     color: white;
     background-color: rgb(86, 123, 149);
     border: 1px solid rgb(50, 104, 145);    
@@ -247,6 +247,12 @@ Social Links
     width: 100%;
     display: flex;
     margin-top: 22px;
+}
+
+.article-bottom .links {
+    margin: 0;
+    justify-content: flex-end;
+    flex: 1;
 }
 
 .links a {
@@ -363,19 +369,6 @@ Article
 
 .article > p a:hover {
     text-decoration: none;
-}
-
-.video {
-    display: flex;
-    flex-direction: column;
-}
-
-.article-bottom {
-    background-color: wheat;
-}
-
-.suggested {
-    background-color: indigo;
 }
 
 /*
@@ -549,6 +542,8 @@ Video
 */
 
 .video {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     margin: 44px;
 }
@@ -560,12 +555,21 @@ iframe {
 
 /*
 ====================================================
-Footer
+Suggested Content
+====================================================
+*/
+
+.suggested {
+    background-color: indigo;
+}
+
+/*
+====================================================
+Footers
 ====================================================
 */
 
 footer {
-    background-color: maroon;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -574,6 +578,35 @@ footer {
 footer > div {
     display: flex;
     justify-content: space-between;
+}
+
+.article-bottom {
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: rgb(102, 102, 102);
+    margin-top: 22px;
+}
+
+.article-bottom > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 22px 0;
+}
+
+.article-bottom a {
+    text-decoration: underline;
+}
+
+.article-bottom a:hover {
+    text-decoration: none;
+}
+
+.article-bottom button {
+    height: 100%;
+    padding: 10px 0;
+    flex: 1;
 }
 
 nav.bottom:last-child {
