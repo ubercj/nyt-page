@@ -560,7 +560,189 @@ Suggested Content
 */
 
 .suggested {
-    background-color: indigo;
+    margin-top: 44px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+}
+
+.newsletter-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsletter-heading a {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+    color: rgb(102, 102, 102);
+}
+
+.newsletter-heading a:hover {
+    text-decoration: none;
+}
+
+.suggested h2 {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.375rem;
+}
+
+.suggested h4 {
+    font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    color: rgb(18, 18, 18);
+    text-align: left;
+}
+
+.suggested h4:hover {
+    color: #666;
+}
+
+.suggested .grid {
+    width: 90%;
+    grid-template-columns: 75% 25%;
+    gap: 30px;
+}
+
+.suggested .grid-item {
+    border-top: 1px solid #121212;
+}
+
+.suggested .grid-item:last-child {
+    grid-area: 1 / 2 / 4 / 3;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+}
+
+.more-in-cat {
+    flex-wrap: wrap-reverse;
+}
+
+.more-in-cat p, .editor-picks p {
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    letter-spacing: 0.05em;
+    color: rgb(153, 153, 153);
+}
+
+.more-in-cat a:hover, .editor-picks a:hover, .container-vertical a:hover {
+    text-decoration: none;
+}
+
+p.credit {
+    font-family: nyt-cheltenham-small, georgia, "times new roman";
+    font-size: 0.625rem;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.container > div {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 10px;
+}
+
+.container-vertical {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-vertical div {
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #e2e2e2;
+    padding: 15px 0;
+}
+
+/*
+====================================================
+Floating Panels
+====================================================
+*/
+
+.shadow-container {
+    display: flex;
+}
+
+.shadow-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    height: 100%;
+    border: 1px solid #e2e2e2;
+    border-radius: 2px;
+    padding: 15px;
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+.shadow-box:nth-of-type(2) {
+    margin: 0 15px;
+}
+
+.shadow-box:hover {
+    box-shadow: 1px 1px 2px #eee, -1px -1px 2px #eee;
+}
+
+.shadow-box > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.shadow-box .newsletter-logo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.shadow-box div img:first-child {
+    height: 82px;
+}
+
+#plus-button {
+    height: 30px;
+    border-radius: 50%;
+}
+
+#plus-button:hover {
+    cursor: pointer;
+    background-color: #666;
+}
+
+.shadow-box .category {
+    font-size: .6875rem;
+    line-height: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.09em;
+}
+
+.shadow-box .h3 {
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    color: rgb(18, 18, 18);
+}
+
+.shadow-box a {
+    color: rgb(50, 104, 145);
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.125rem;
+    letter-spacing: 0.2px;
+    margin-top: 15px;
 }
 
 /*
