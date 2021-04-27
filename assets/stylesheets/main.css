@@ -140,7 +140,6 @@ button:hover {
 }
 
 .page-container {
-    /* background-color: silver; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -332,10 +331,47 @@ Sidebar
 */
 
 .sidebar {
-    background-color: blue;
-    display: none;
-    float: right;
-    /* align-self: flex-end; */
+    position: absolute;
+    right: 0;
+    top: 18%;
+    width: 15%;
+    margin-right: 44px;
+}
+
+.sidebar h2 {
+    color: black;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.side-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.side-container h4 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    color: rgb(51, 51, 51);
+    font-family: nyt-cheltenham-small, georgia, "times new roman";
+}
+
+.side-container div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.side-container img {
+    height: 75px;
+    width: 75px;
+    margin-right: 10px;
 }
 
 /*
@@ -668,7 +704,7 @@ p.credit {
 
 /*
 ====================================================
-Floating Panels
+Shadow Panels
 ====================================================
 */
 
@@ -791,7 +827,76 @@ footer > div {
     flex: 1;
 }
 
-nav.bottom:last-child {
+footer.bottom {
+    width: 90%;
+    border-top: 5px double #e2e2e2;
+    padding: 10px 0;
+}
+
+footer.bottom > div:first-child {
+    padding: 10px 0;
+}
+
+#go-to-home {
+    color: rgb(86, 123, 149);
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-size: 11px;
+}
+
+.site-nav {
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 22px;
+}
+
+.site-nav > div {
+    flex: 1;
+}
+
+.site-nav > div:last-child {
+    padding-left: 15px;
+    border-left: 1px solid #e2e2e2;
+}
+
+.site-nav .spacer {
+    width: 80%;
+}
+
+.site-nav h2 {
+    color: rgb(51, 51, 51);
+    font-size: 13px;
+    font-weight: 700;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    margin: 0;
+}
+
+.site-nav h3 {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.site-nav p {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    color: black;
+}
+
+.footer_subscribe {
     display: flex;
-    flex-direction: column;
+}
+
+.footer_subscribe img {
+    height: 15px;
+    margin-right: 3px;
+}
+
+.legal {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 11px;
+    text-align: center;
+    line-height: 8px;
+    color: #666;
+    padding: 15px 0;
 }

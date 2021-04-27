@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="assets/stylesheets/main.css">
-    <link rel="icon" type="image/png" href="assets/images/logos/nyt_first_letter_logo.png">
+    <link rel="icon" type="image/png" href="assets/images/logos/nyt_first_letter.png">
     <title>Space Ripples Reveal Big Bang’s Smoking Gun - The New York Times</title>
   </head>
 
@@ -73,9 +73,31 @@
         </p>
       </div>
 
-      <!-- Side float --> <!-- TODO: ADD FLOATING SIDEBAR -->
+      <!-- Side float -->
       <div class="sidebar">
-        Sidebar content
+        <h2>Editors' Picks</h2>
+        <div class="side-container">
+          <div>
+            <img src="assets/images/pink_trees.jpg" alt="">
+            <a href="#">
+              <h4>The Nervous Person's Guide to Re-entering Society</h4>
+            </a>
+          </div>
+
+          <div>
+            <img src="assets/images/nun.jpg" alt="">
+            <a href="#">
+              <h4>A Nun and a Doctor, She's One of Europe's Longstanding Vaccine Skeptics</h4>
+            </a>
+          </div>
+
+          <div>
+            <img src="assets/images/finland.jpg" alt="">
+            <a href="#">
+              <h4>My Boyfriend Has Two Partners. Should I Be His Third?</h4>
+            </a>
+          </div>
+        </div>
       </div>
 
       <!-- Article container -->
@@ -374,7 +396,7 @@
             </div>
             <div class="shadow-container">
 
-              <!-- Floating panels -->
+              <!-- Shadow panels -->
               <div class="shadow-box">
 
                 <div>
@@ -572,13 +594,13 @@
       </section>
 
       <!-- Footer -->
-      <footer>
+      <footer class="bottom">
         <div>
-          <img src="assets/images/logos/The_New_York_Times_logo.png" alt="The New York Times" height="44">
-          <a href="#">Go to Home Page >></a>
+          <img src="assets/images/logos/The_New_York_Times_logo.png" alt="The New York Times" height="34">
+          <a href="#" id="go-to-home">Go to Home Page >></a>
         </div>
 
-        <nav class="bottom">
+        <nav class="site-nav">
           <div>
             <h2>NEWS</h2>
             <a href="#"><p>Home Page</p></a>
@@ -661,14 +683,33 @@
           <div>
             <div>
               <h2>SUBSCRIBE</h2>
-              <a href="#"><h3>Home Delivery</h3></a>
-              <a href="#"><h3>Digital Subscriptions</h3></a>
-              <a href="#"><h3>Games</h3></a>
-              <a href="#"><h3>Cooking</h3></a>
+              
+              <a href="#" class="footer_subscribe">
+                <img src="assets/images/icons/newspaper.png" alt="" class="footer_icon">
+                <h3>Home Delivery</h3>
+              </a>
+
+              <a href="#" class="footer_subscribe">
+                <img src="assets/images/logos/nyt_first_letter.png" alt="" class="footer_icon">
+                <h3>Digital Subscriptions</h3>
+              </a>
+
+              <a href="#" class="footer_subscribe">
+                <img src="assets/images/icons/checkerboard.png" alt="" class="footer_icon">
+                <h3>Games</h3>
+              </a>
+
+              <a href="#" class="footer_subscribe">
+                <img src="assets/images/icons/fork&knife.png" alt="" class="footer_icon">
+                <h3>Cooking</h3>
+              </a>
+
               <a href="#"><p>Email Newsletters</p></a>
               <a href="#"><p>Corporate Subscriptions</p></a>
               <a href="#"><p>Education Rate</p></a>
             </div>
+
+            <div class="spacer"></div>
 
             <div>
               <a href="#"><p>Mobile Applications</p></a>
@@ -676,7 +717,7 @@
               <a href="#"><p>International</p></a>
               <a href="#"><p>Canada</p></a>
               <a href="#"><p>Español</p></a>
-              <a href="#"><p>???</p></a>
+              <a href="#"><p>中文网</p></a>
             </div>
           </div>
         </nav>
