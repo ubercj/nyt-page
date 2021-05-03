@@ -1,5 +1,7 @@
 # NYT Article Assignment
 
+See the finished assignment live [here](https://ubercj.github.io/nyt-page/).
+
 This is a project from The Odin Project entitled "Positioning and Floating Elements" - more details on the assignment [here](https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/html-and-css/lessons/positioning-and-floating-elements).
 
 The goal is to use any of the HTML and CSS methods I've learned so far to recreate the layout and design of this [New York Times article](https://www.nytimes.com/2014/03/18/science/space/detection-of-waves-in-space-buttresses-landmark-theory-of-big-bang.html?_r=0) (paywall warning).
